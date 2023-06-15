@@ -31,24 +31,24 @@ darkmode.onclick = () => {
 
 // ==================Contact Form=================
 
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbw1U4z_LJjoicciSe0PSSB8MVkm7H3TdXmVVpSdjlppwubQI8FVjf1vPxL-2eFP-XOr/exec";
-const form = document.forms["submit-to-google-sheet"];
+// const scriptURL =
+//   "https://script.google.com/macros/s/AKfycbw1U4z_LJjoicciSe0PSSB8MVkm7H3TdXmVVpSdjlppwubQI8FVjf1vPxL-2eFP-XOr/exec";
+// const form = document.forms["submit-to-google-sheet"];
 
-const msg = document.getElementById("msg");
+// const msg = document.getElementById("msg");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      msg.innerHTML = "Message Sent Successfully";
-      setTimeout(function () {
-        msg.innerHTML = "";
-      }, 4000);
-      form.reset();
-    })
-    .catch((error) => console.error("Error!", error.message));
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   fetch(scriptURL, { method: "POST", body: new FormData(form) })
+//     .then((response) => {
+//       msg.innerHTML = "Message Sent Successfully";
+//       setTimeout(function () {
+//         msg.innerHTML = "";
+//       }, 4000);
+//       form.reset();
+//     })
+//     .catch((error) => console.error("Error!", error.message));
+// });
 
 // ===========Scrollbtn=========
 
